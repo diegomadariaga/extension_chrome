@@ -1,19 +1,11 @@
 {
-    "manifest_version": 3,
-    "name": "selector html",
-    "description": "selecciona elementos del html",
+    "manifest_version": 2,
+    "name": "obtener datos covid mundial",
+    "description": "obtiene datos del covid actualizados a la fecha actual",
     "version": "1.0",
-    "action": {
+    "browser_action": {
         "default_popup": "popup.html"
     },
-    "background": {
-        "scripts": ["background.js"]
-    },
-    "permissions": ["storage", "activeTab"],
-    "content_scripts": [
-        {
-            "matches": ["https://*/*", "http://*/*"],
-            "js": ["content-script.js"]
-        }
-    ]
+    
+    "permissions": ["storage", "activeTab"]
 }
